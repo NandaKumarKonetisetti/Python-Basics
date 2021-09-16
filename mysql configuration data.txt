@@ -1,0 +1,25 @@
+
+C:\Users\nanda>mysqld --console --initialize --basedir=C:\mysql-8.0.23-winx64 --datadir=C:\mysqldata
+
+
+
+
+
+C:\Users\nanda>mysqld --console --initialize --basedir=C:\mysql-8.0.23-winx64 --datadir=C:\mysqldata
+2021-02-20T06:29:33.356124Z 0 [System] [MY-013169] [Server] C:\mysql-8.0.23-winx64\bin\mysqld.exe (mysqld 8.0.23) initializing of server in progress as process 13988
+2021-02-20T06:29:33.655360Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2021-02-20T06:29:52.965646Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2021-02-20T06:30:27.233108Z 6 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: Acp8Xpf;sr8y
+
+
+
+//To make the database connection active
+C:\Users\nanda>mysqld --console --datadir=C:\mysqldata
+
+To change the mysql password using the below command
+mysql> alter user'root'@'localhost' identified by '1234567'
+To enter the into the mysql database
+C:\Users\nanda>mysql -u root -p
+
+To shut down the mysq 
+mysqladmin -u  root -p shutdown
